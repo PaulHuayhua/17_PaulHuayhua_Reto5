@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="#">ANALISIS DE SISTEMA</a>
+            </div>
+
+            <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+            <label for="menu-toggle" class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav class="nav-link">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#descripcion">Sobre mi</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="header_text">
+            <h1 id="title-header">Bienvenido a Mi Portafolio</h1>
+            <p id="text-description">Hola, soy Paul Huayhua Jaquehua, un estudiante apasionado por el desarrollo web y las soluciones
+                tecnológicas innovadoras. A través de mis proyectos académicos y personales, he adquirido experiencia en
+                diversas herramientas y lenguajes de programación. Mi objetivo es seguir aprendiendo, crecer
+                profesionalmente y contribuir a crear soluciones digitales que mejoren la vida de las personas. Explora
+                mis proyectos y no dudes en contactarme si te interesa colaborar.</p>
+        </section>
+        <section class="info-content">
+            <div class="img-content">
+                <img src="img/perfil.png" alt="">
+            </div>
+            <div class="text-content">
+                <h2>Conoce a Paul Huayhua</h2>
+                <p>Soy un estudiante de Ingeniería de Sistemas, con un promedio de 9.5 en la materia de
+                    Programación y Análisis de Sistemas. Me gustaría trabajar en proyectos que me ayuden a
+                    desarrollar habilidades en el área de la programación y la ingeniería de sistemas.</p>
+            </div>
+        </section>
+        <section class="gallery-cards" id="proyectos">
+            <div class="card one">
+                <img src="img/img1.png" alt="Imagen de la primera tarjeta">
+                <div class="info-cards">
+                    <h2>Automatizar mensajes</h2>
+                    <p>Este proyecto utiliza Google Apps Script para automatizar tareas repetitivas, como el envío de
+                        correos y la actualización de hojas de cálculo. Ayuda a optimizar procesos y mejorar la
+                        eficiencia sin intervención manual.</p>
+                    <div class="btn_card">
+                        <button onclick="openModal('modal1')">Ver más</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card two">
+                <img src="img/img2.jpg" alt="Imagen de la segunda tarjeta">
+                <div class="info-cards">
+                    <h2>Desarrollo web</h2>
+                    <p>Desarrollé una página web que promueve prácticas agrícolas sostenibles, destacando su importancia
+                        para la seguridad alimentaria y el medio ambiente.</p>
+                    <div class="btn_card">
+                        <button onclick="openModal('modal2')">Ver más</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card three">
+                <img src="img/img3.jpg" alt="Imagen de la tercera tarjeta">
+                <div class="info-cards">
+                    <h2>Desarrollo de CRUD</h2>
+                    <p>Creé un sistema CRUD (Crear, Leer, Actualizar, Eliminar) que permite gestionar datos de manera
+                        eficiente, con una interfaz sencilla para realizar operaciones básicas sobre una base de datos.
+                    </p>
+                    <div class="btn_card">
+                        <button onclick="openModal('modal3')">Ver más</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modals -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal1')">&times;</span>
+                <h2>Automatizar mensajes</h2><br>
+                <p>Detalles completos del proyecto: En este proyecto, utilicé Google Apps Script para automatizar el
+                    envío de correos electrónicos masivos y la actualización de hojas de cálculo, reduciendo el tiempo
+                    invertido en tareas repetitivas y aumentando la productividad.</p>
+            </div>
+        </div>
+
+        <div id="modal2" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal2')">&times;</span>
+                <h2>Desarrollo web</h2><br>
+                <p>Detalles completos del proyecto: La página web está diseñada para educar sobre la importancia de la
+                    agricultura sostenible, ofreciendo información interactiva sobre técnicas agrícolas que respetan el
+                    medio ambiente y fomentan la seguridad alimentaria.</p>
+            </div>
+        </div>
+
+        <div id="modal3" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal3')">&times;</span>
+                <h2>Desarrollo de CRUD</h2><br>
+                <p>Detalles completos del proyecto: Este sistema CRUD fue desarrollado para facilitar la administración
+                    de datos en diversas aplicaciones. Permite a los usuarios realizar operaciones básicas con una
+                    interfaz amigable y directa, optimizando la gestión de la información.</p>
+            </div>
+        </div>
+        <section class="form-contact">
+            <form action="">
+                <h2>Contacto</h2>
+                <input type="text" name="name" placeholder="Nombre" required>
+                <input type="email" name="email" placeholder="Correo electrónico" required>
+                <textarea name="message" placeholder="Escribe tu mensaje" required></textarea>
+                <input type="submit" value="Enviar">
+                <p>Recibirás una respuesta en breve</p> 
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="section-social">
+                <h3>Redes sociales</h3>
+                <img src="img/whatsapp.png" alt="logo de whatsapp ">
+                <img src="img/facebook.png" alt="logo de facebook">
+                <img src="img/twiter.png" alt="logo de twitter">
+            </div>
+            <div class="section-links">
+                <h3>Enlaces rapidos</h3>
+                <a href="">Inicio</a>
+                <a href="">Inicio2</a>
+                <a href="">Inicio3</a>
+                <a href="">Inicio4</a>
+            </div>
+            <div class="footer-bottom">
+                <h3>Derechos</h3>
+                &copy; 2024 Lorem ipsum dolor sit amet.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+
+
+</html>
